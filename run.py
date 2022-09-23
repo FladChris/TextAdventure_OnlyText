@@ -1,15 +1,9 @@
-from unicodedata import name
-import characters
-import locations
 from commands import commands_list
-import MainStory
+import mainStory
 
-game_name = "placeholder"  # Name of the game World !IMPORTANT placeholder
-
-print(MainStory.prolog())  # print the prolog from MainStory.py
-print(MainStory.player_name_question())  # print the player name question
-
-print("\n" + "Na dann...", characters.MainCharacter.player_name(name),", Willkommen in", game_name)
+mainStory.prolog()  # Start the game with the prolog
+mainStory.player_name_question()  # ask for the player's name
+mainStory.start_main_storyline()  # print the start of the main storyline
 
 while True:
     print("\n")
